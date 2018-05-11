@@ -59,8 +59,8 @@ class Reservation
     }
     function __toString()
     {
-        return "Start Date: " . $this->startDate->format("d-m-y") . "\n"
-            . "End Date: " . $this->endDate->format("d-m-y") . "\n"
+        return " Start Date: " . $this->startDate->format("y-m-d")
+            . " EndDate: " . $this->endDate->format("y-m-d") . " "
             . $this->guest->__toString();
     }
 }
